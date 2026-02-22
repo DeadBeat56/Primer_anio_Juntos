@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños y Aniversario!</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ce93d8 0%, #f3e5f5 99%, #f3e5f5 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #4a4a4a;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 90%;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #8e44ad;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #9b59b6;
+            font-weight: 300;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        /* Galería de Fotos */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .photo-frame {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-frame:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Contador de días / Botón Galería */
+        .counter-link {
+            text-decoration: none;
+            display: block;
+            margin-top: 30px;
+        }
+
+        .counter {
+            background: linear-gradient(135deg, #8e44ad, #9b59b6);
+            color: white;
+            padding: 25px 20px;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 5px 15px rgba(142, 68, 173, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .counter h3 {
+            color: white;
+            margin: 0 0 5px 0;
+            font-size: 1.5em;
+        }
+
+        .counter p {
+            color: #f0d9ff;
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .counter-link:hover .counter {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(142, 68, 173, 0.6);
+        }
+
+        .btn-celebrate {
+            background-color: #8e44ad;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn-celebrate:hover {
+            background-color: #7d3c98;
+        }
+
+        /* Estilo para el link de la canción */
+        .song-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #8e44ad;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #8e44ad;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        .song-link:hover {
+            background-color: #8e44ad;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Feliz Cumpleaños y Feliz 1er Año!</h1>
+        <h2>Te amo siempre lo hare</h2>
+        
+        <p>
+            Hoy es tu cumpleaños y dentro de unos dias va a ser nuestro primer año juntos te amo de verdad te amo siempre lo hare sos la mejor novia del mundo mundial y bueno perdon de verdad por ser un imbecil a veces no queria que me odiarias solo queria estar con vos siempre y bueno te amo mucho y espero que este año que viene sea mejor te amo de verdad y no puede poner emojis pero bueno te amo de verdad amo cada cosa de vos me encantas mucho siempre lo haras como yo te dije vos sos la niña de mi alma ya que alma nunca muere te amo dever me encantas mucho y puede te amo y siempre lo hare este es un regalo que llevo haciendo hace mucho y bueno espero que te guste Te amo y siempre lo hare Te amo Mucho mi niña hermosa y bueno espero que te guste este regalo que hice con mucho amor para vos te amo de verdad y siempre lo hare te amo mucho mi niña hermosa
+        </p>
+
+        <!-- Link a la canción (Cambia el href por tu link) -->
+        <a href="https://www.youtube.com/watch?v=SYkEFXO2TNQ&list=RDSYkEFXO2TNQ&start_radio=1" target="_blank" class="song-link"> Escuchar nuestra canción</a>
+
+        <!-- SECCIÓN DE FOTOS: Aquí irán tus fotos -->
+        <div class="photo-gallery">
+            <!-- Foto 1 -->
+            <div class="photo-frame">
+                <!-- Reemplaza el 'src' con el nombre de tu archivo de foto, ej: foto1.jpg -->
+                <img src="img/WhatsApp Image 2026-02-22 at 3.42.12 PM.jpeg" alt="Foto Juntos 1">
+                <p>Nuestro comienzo</p>
+            </div>
+            <!-- Foto 2 -->
+            <div class="photo-frame">
+                <img src="img/WhatsApp Image 2026-02-22 at 3.42.13 PM.jpeg" alt="Foto Juntos 2">
+                <p>Momentos divertidos</p>
+            </div>
+            <!-- Foto 3 -->
+            <div class="photo-frame">
+                <img src="img/WhatsApp Image 2026-02-22 at 3.42.12 PM (1).jpeg" alt="Foto Juntos 3">
+                <p>Te amo</p>
+            </div>
+            <!-- Foto 4 -->
+            <div class="photo-frame">
+                <img src="img/WhatsApp Image 2026-02-22 at 3.42.13 PM.jpeg" alt="Foto Juntos 4">
+                <p>Siempre juntos</p>
+            </div>
+            <!-- Foto 5 -->
+            <div class="photo-frame">
+                <img src="img/WhatsApp Image 2026-02-22 at 3.42.13 PM (3).jpeg" alt="Foto Juntos 5">
+                <p>Mi persona favorita</p>
+            </div>
+            <!-- Foto 6 -->
+            <div class="photo-frame">
+                <img src="img/WhatsApp Image 2026-02-22 at 3.42.13 PM (2).jpeg" alt="Foto Juntos 6">
+                <p>Inolvidable</p>
+            </div>
+        </div>
+
+        <!-- Botón a Galería Virtual -->
+        <a href="galeria.html" class="counter-link" title="Ver nuestra galería virtual">
+            <div class="counter">
+                <h3>365 Días de Amor</h3>
+                <p>¡Click para ver nuestra galería virtual!</p>
+            </div>
+        </a>
+
+        <button class="btn-celebrate" onclick="lanzarConfeti()">¡Celebrar Nuestro Amor! </button>
+    </div>
+
+    <!-- Script para el efecto de confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        function lanzarConfeti() {
+            var duration = 3 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                var particleCount = 50 * (timeLeft / duration);
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        }
+    </script>
+</body>
+</html>

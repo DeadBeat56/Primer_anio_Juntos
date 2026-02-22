@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Galería Virtual</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ce93d8 0%, #f3e5f5 99%, #f3e5f5 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            color: #4a4a4a;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #8e44ad;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        p.subtitle {
+            color: #9b59b6;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+
+        /* Grid de la galería */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: white;
+            padding: 5px;
+            height: 300px; /* Altura fija para uniformidad */
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(142, 68, 173, 0.3);
+            z-index: 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* Botón de volver */
+        .back-btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 35px;
+            background-color: #8e44ad;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(142, 68, 173, 0.3);
+        }
+
+        .back-btn:hover {
+            background-color: #7d3c98;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>📸 Nuestra Historia en Imágenes</h1>
+        <p class="subtitle">Cada foto es un recuerdo de lo mucho que te amo.</p>
+        
+        <div class="gallery-grid">
+            <!-- Aquí puedes poner todas las fotos que quieras -->
+            <div class="gallery-item"><img src="img/WhatsApp Image 2026-02-22 at 3.42.12 PM.jpeg" alt="Recuerdo 1"></div>
+            <div class="gallery-item"><img src="img/WhatsApp Image 2026-02-22 at 3.42.13 PM.jpeg" alt="Recuerdo 2"></div>
+            <div class="gallery-item"><img src="img/WhatsApp Image 2026-02-22 at 3.42.12 PM (1).jpeg" alt="Recuerdo 3"></div>
+            <div class="gallery-item"><img src="img/WhatsApp Image 2026-02-22 at 3.42.13 PM.jpeg" alt="Recuerdo 4"></div>
+            <div class="gallery-item"><img src="img/WhatsApp Image 2026-02-22 at 3.42.13 PM (3).jpeg" alt="Recuerdo 5"></div>
+            <div class="gallery-item"><img src="img/WhatsApp Image 2026-02-22 at 3.42.13 PM (2).jpeg" alt="Recuerdo 6"></div>
+            
+            <!-- Espacios para más fotos (puedes copiar y pegar estas líneas para agregar más) -->
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x400/e1bee7/8e44ad?text=A%C3%B1ade+m%C3%A1s+recuerdos" alt="Espacio Nuevo"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x400/e1bee7/8e44ad?text=Te+Amo" alt="Espacio Nuevo"></div>
+        </div>
+
+        <a href="index.html" class="back-btn">⬅ Volver al Inicio</a>
+    </div>
+</body>
+</html>
